@@ -1,0 +1,12 @@
+*.log
+logs/
+target/
+.idea/
+.idea_modules/
+lib_managed/
+src_managed/
+project/boot
+.history
+*.diff
+output/
+.DS_STORE
