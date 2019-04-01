@@ -89,7 +89,7 @@ while we would like to add test's [tags](http://www.scalatest.org/user_guide/tag
 
 ### How to pass suite's tags as custom information to the reporter?
 
-1. Mixing [`BeforeAndAfterAll`](http://doc.scalatest.org/3.0.1-2.12/org/scalatest/BeforeAndAfterAll.html) trait in the test:
+1. Mixin [`BeforeAndAfterAll`](http://doc.scalatest.org/3.0.1-2.12/org/scalatest/BeforeAndAfterAll.html) trait in the test:
     ```
     class HelloSpec extends FlatSpec with Matchers with BeforeAndAfterAll {
     ```
@@ -123,13 +123,4 @@ gets passed to reporter via [`Informer`](http://doc.scalatest.org/3.0.1-2.12/org
     Test / testOptions += Tests.Argument("-C", "org.scalatest.tools.JUnitReporterWithTags")
     ```
 1. Produce the report with `sbt test`
-1. Report should be created at
-    ```
-    target/TEST-example.HelloSpec.xml
-    ```
- 
- 
- 
- 
-
-
+1. Report should be created at `target/TEST-example.HelloSpec.xml`
